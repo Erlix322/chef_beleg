@@ -4,6 +4,6 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-apt_package 'libreoffice' do
-	action [:remove, :purge]
+execute "Remove libre" do
+	command "sudo apt-get -y remove libreoffice* --purge"
 end
