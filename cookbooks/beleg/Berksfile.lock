@@ -4,12 +4,12 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  apt (6.1.4)
   beleg (0.1.0)
-    libreoffice (~> 0.0.2)
+    firewall (~> 2.6.2)
     mysql (~> 8.5.1)
     vim (~> 2.0.2)
-  libreoffice (0.0.2)
-    apt (>= 0.0.0)
+  chef-sugar (3.6.0)
+  firewall (2.6.2)
+    chef-sugar (>= 0.0.0)
   mysql (8.5.1)
   vim (2.0.2)

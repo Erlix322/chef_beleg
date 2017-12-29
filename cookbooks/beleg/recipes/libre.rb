@@ -4,4 +4,6 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-include_recipe 'libreoffice'
+apt_package 'libreoffice' do
+	action [:remove, :purge]
+end
