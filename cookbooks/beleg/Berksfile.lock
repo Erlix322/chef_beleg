@@ -4,6 +4,10 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
+  apt (6.1.4)
   beleg (0.1.0)
+    libreoffice (~> 0.0.2)
     vim (~> 2.0.2)
+  libreoffice (0.0.2)
+    apt (>= 0.0.0)
   vim (2.0.2)
