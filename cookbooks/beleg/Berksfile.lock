@@ -4,7 +4,9 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
+  apache2 (5.0.1)
   beleg (0.1.0)
+    apache2 (~> 5.0.1)
     firewall (~> 2.6.2)
     mysql (~> 8.5.1)
     vim (~> 2.0.2)
