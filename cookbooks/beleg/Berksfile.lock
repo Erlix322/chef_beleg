@@ -1,0 +1,7 @@
+DEPENDENCIES
+  beleg
+    path: .
+    metadata: true
+
+GRAPH
+  beleg (0.1.0)
