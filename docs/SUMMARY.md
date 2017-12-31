@@ -1,4 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-	* [chef setup](chapter-1/README.md)
+  * [chef s](chapter-1/README.md)
+
+
+
