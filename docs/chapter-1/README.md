@@ -1,4 +1,4 @@
-# Chef Registration
+# Registration
 
 
 
