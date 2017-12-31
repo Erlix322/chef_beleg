@@ -2,7 +2,7 @@
 
 Bla blabla Bla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blabla
 
-![](/assets/rom.png)
+![](/docs/_book/img/rom.png)
 
 ## Überschrift 2
 
