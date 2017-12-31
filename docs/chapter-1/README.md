@@ -1,7 +1,5 @@
 # Registration
 
-
-
 Bla blabla Bla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blabla
 
 ![](/assets/rom.png)
@@ -9,6 +7,4 @@ Bla blabla Bla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blabl
 ## Überschrift 2
 
 blabalbalbalb
-
-
 
