@@ -1,6 +1,6 @@
 # Summary
 
-* [chef setup](/docs/README.md)
+* [Introduction](/README.md)
   * [chef s](chapter-1/README.md)
 
 
