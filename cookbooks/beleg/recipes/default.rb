@@ -4,7 +4,7 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-
+include_recipe 'beleg::proxy'
 include_recipe 'beleg::apache'
 #include_recipe 'beleg::firefox'
 #include_recipe 'beleg::htop'
