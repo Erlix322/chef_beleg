@@ -5,12 +5,12 @@ Bla blabla Bla blablaBla blablaBla blablaBla blablaBla blablaBla blablaBla blabl
 ** Code **
 
 ```
-printf("Micha: %d", michafunctioncall());
+printf("foo: %d", foo());
 ```
 
 
 
-![](../img/rom.png)
+![](../img/1_ChefDK_Download.PNG)
 
 ## Überschrift 2
 
