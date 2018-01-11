@@ -1,11 +1,15 @@
 # Summary
 
-### Part I
+### Kapitel I - Einführung
+* [Ziel dieses Buches](./Einführung/UeberChef.md)
+* [Vorraussetzungen](./Einführung/UeberChef.md#Vorraussetzungen)
 
-* [chef setup](part1/README.md)
+### Kapitel II - Client
+
+* [Client Setup](/README.md)
   * [registration on chef.io](/chapter-1/README.md)
   
-### Part II
+### Kapitel III - Server
 
 * [download des clients](/chapter-1/SUMMARY.md)
   * [bla](/chapter-1/README.md)
