@@ -1,0 +1,33 @@
+DEPENDENCIES
+  beleg
+    path: .
+    metadata: true
+
+GRAPH
+  apache2 (5.0.1)
+  beleg (0.1.0)
+    apache2 (~> 5.0.1)
+    chrome (~> 4.0.2)
+    firefox (~> 4.0.0)
+    firewall (~> 2.6.2)
+    htop (~> 2.0.0)
+    mysql (~> 8.5.1)
+    vim (~> 2.0.2)
+  chef-sugar (3.6.0)
+  chrome (4.0.2)
+    dmg (>= 3.0)
+  compat_resource (12.19.0)
+  dmg (4.1.0)
+  firefox (4.0.0)
+    dmg (>= 2.2)
+  firewall (2.6.2)
+    chef-sugar (>= 0.0.0)
+  htop (2.0.0)
+    yum-repoforge (>= 0.0.0)
+  mysql (8.5.1)
+  vim (2.0.2)
+  yum-epel (2.1.2)
+    compat_resource (>= 12.16.3)
+  yum-repoforge (2.0.1)
+    compat_resource (>= 12.16.3)
+    yum-epel (>= 0.0.0)
