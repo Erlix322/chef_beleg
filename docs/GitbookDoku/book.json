@@ -1,4 +1,4 @@
 {
-    "plugins": ["expandable-chapters"],
+    "plugins": ["expandable-chapters","anchors"],
     "language":"de"
 }

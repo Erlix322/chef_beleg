@@ -6,13 +6,6 @@ Alle Ergebnisse wurden dabei innerhalb einer Belegarbeit an der Hochschule für 
 
 
 
-# Vorraussetzungen
-Zur Abarbeitung des kompletten Buchs, benötigen Sie folgende Software:
-	
-* einen Browser und Internetzugang
-* VMware workstation / VirtualBox o.ä 
-* [Ubuntu 16.04 iso](https://www.ubuntu.com/download/desktop)
-
 
 
 

@@ -2,8 +2,10 @@
 
 ### Kapitel I - Einführung
 * [Ziel dieses Buches](./Einführung/UeberChef.md)
-* [Vorraussetzungen](./Einführung/UeberChef.md#Vorraussetzungen)
-
+* [Vorraussetzungen](./Einführung/Vorraussetzungen.md)
+ * [Benötigte Software](./Einführung/Vorraussetzungen.md#software)
+ * [Registrierung auf Chef.io](./Einführung/Vorraussetzungen.md#registrierung)
+ 
 ### Kapitel II - Client
 
 * [Client Setup](/README.md)
