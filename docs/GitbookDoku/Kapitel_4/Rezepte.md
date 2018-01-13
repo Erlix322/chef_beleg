@@ -21,7 +21,7 @@ In Anlehnung an die Aufgabenstellung erfolgt die Erstellung von allen Rezepten m
 * chef generate recipe user
 * chef generate recipe vim
 
-# Apache Rezept
+## Apache Rezept {#apache}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/apache2.svg?style=flat)](https://supermarket.chef.io/cookbooks/apache2)
 
@@ -42,7 +42,7 @@ Die Aktuelle Version dieses Cookbooks
     end 
 ```
 
-# Chrome Rezept
+# Chrome Rezept {#chrome}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/chrome.svg?style=flat)](https://supermarket.chef.io/cookbooks/chrome)
 
@@ -50,7 +50,7 @@ Die Aktuelle Version dieses Cookbooks
 ```ruby
     include_recipe 'chrome'
 ```
-# Eclipse Rezept
+# Eclipse Rezept {#eclipse}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/eclipse.svg?style=flat)](https://supermarket.chef.io/cookbooks/eclipse)
 
@@ -61,7 +61,7 @@ Die Aktuelle Version dieses Cookbooks
     end
 ```
 
-# Firefox Rezept
+# Firefox Rezept {#firefox}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/firefox.svg?style=flat)](https://supermarket.chef.io/cookbooks/firefox)
 
@@ -69,8 +69,8 @@ Die Aktuelle Version dieses Cookbooks
 ```ruby
     include_recipe 'firefox'
 ```
-
-# Firewall Rezept
+ 
+# Firewall Rezept {#firewall}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/firewall.svg?style=flat)](https://supermarket.chef.io/cookbooks/firewall)
 
@@ -104,7 +104,7 @@ Die Aktuelle Version dieses Cookbooks
     end
 ```
 
-# Htop Rezept
+# Htop Rezept {#htop}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/htop.svg?style=flat)](https://supermarket.chef.io/cookbooks/htop)
 
@@ -113,7 +113,7 @@ Die Aktuelle Version dieses Cookbooks
     include_recipe 'htop'
 ```
 
-# Libre Rezept
+# Libre Rezept {#libre}
 
 ```ruby
     execute "Remove libre" do
@@ -121,7 +121,7 @@ Die Aktuelle Version dieses Cookbooks
     end
 ```
 
-# MySql Rezept
+# MySql Rezept {#mysql}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/mysql.svg?style=flat)](https://supermarket.chef.io/cookbooks/mysql)
 
@@ -135,7 +135,7 @@ Die Aktuelle Version dieses Cookbooks
     end
 ```
 
-# Proxy Rezept
+# Proxy Rezept {#proxy}
 Die Aktuelle Version dieses Cookbooks  
 
 ```ruby
@@ -146,7 +146,7 @@ cookbook_file "/tmp/proxy.txt"
     end
 ```
 
-# User Rezept
+# User Rezept {#user}
 
 ```ruby
     group 'users'
@@ -172,7 +172,7 @@ cookbook_file "/tmp/proxy.txt"
     end
 ```
 
-# Vim Rezept
+# Vim Rezept {#vim}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/vim.svg?style=flat)](https://supermarket.chef.io/cookbooks/vim)
 
