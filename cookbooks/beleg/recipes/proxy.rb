@@ -14,6 +14,4 @@ bash "config proxy bash" do
 	code "sudo cat /tmp/proxy.txt >> /home/labornutzer/.bashrc" 
 end
 
-reboot 'reboot node' do
-	action :request_reboot
-end
+
