@@ -1,8 +1,5 @@
-socks_proxy="socks://www-cache.htw-dresden.de:3128/"
-http_proxy="http://www-cache.htw-dresden.de:3128/"
-https_proxy="https://www-cache.htw-dresden.de:3128/"
-HTTP_PROXY="http://www-cache.htw-dresden.de:3128/"
-HTTPS_PROXY="https://www-cache.htw-dresden.de:3128/"
-ftp_proxy="ftp://www-cache.htw-dresden.de:3128/"
-
+export http_proxy='http://www-cache.htw-dresden.de:3128'
+export https_proxy='http://www-cache.htw-dresden.de:3128'
+export HTTP_PROXY='http://www-cache.htw-dresden.de:3128'
+export HTTPS_PROXY='http://www-cache.htw-dresden.de:3128'
 
