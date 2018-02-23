@@ -1,5 +1,5 @@
 # Deployment des Kochbuchs 
-Das Ausrollen des Kochbuchs erfolgt über die ServerVM, welche sie unter [Vorbereitung des Clients](./ClientVorbereitung.md) eingerichtet haben.
+Das Ausrollen des Kochbuchs erfolgt über die ServerVM, welche sie unter [Vorbereitung des Clients](./ServerVorbereitung.md) eingerichtet haben.
 
 ## Klonen des Chef Kochbuchs
 
@@ -48,10 +48,10 @@ Klicken Sie auf den Tab *Administration*, klicken Sie links auf *Organization* u
 ## Upload der Rezepte
 Geben Sie folgende Befehle ein
 
-> cd ~/chef_beleg/cookbooks/beleg
-> berks update
-> berks install
-> berks upload --force
+> cd ~/chef_beleg/cookbooks/beleg  
+> berks update  
+> berks install  
+> berks upload --force  
 
 
 ## Ausrollen des Kochbuchs

@@ -14,10 +14,7 @@
 * [Vorbereitung des Servers](./QuickProject/ServerVorbereitung.md)
 * [Ausrollen des Kochbuchs](./QuickProject/Deployment.md)
 
-### Kapitel III - Client
 
-* [Client Setup](/README.md)
- 
   
 ### Kapitel IV - Server
 * [Kochbücher](./Kapitel_4/cookbook.md)
