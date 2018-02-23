@@ -483,10 +483,18 @@
 <p>und eine Umgebung zum Einrichten/Starten der virtuellen Maschine vorausgesetzt.
 (z.B.: VM Workstation 12 Pro)</p>
 <p>F&#xFC;r das Beispiel in VM Workstation 12 Pro &#xF6;ffen sie die VM und vergeben sie einen Namen (z.B.: ServerVM) und w&#xE4;hlen Sie einen Pfad als Ablageort aus.</p>
-<h2 id="chef-dk-installieren"><a name="chef-dk-installieren" class="plugin-anchor" href="#chef-dk-installieren"><i class="fa fa-link" aria-hidden="true"></i></a>Chef DK installieren</h2>
-<p>Laden Sie sich das Chef Development Kit herunter! &#xD6;ffnen Sie dazu ein Terminal und geben folgenden Befehl ein:</p>
+<h2 id="systemuhr-synchronisieren"><a name="systemuhr-synchronisieren" class="plugin-anchor" href="#systemuhr-synchronisieren"><i class="fa fa-link" aria-hidden="true"></i></a>Systemuhr synchronisieren</h2>
+<p>Um sp&#xE4;tere Fehler zu vermeiden, m&#xFC;ssen Sie die Systemuhr der VM auf die des Hostsystems snchronisieren. In VM Workstation 12 Pro geht dies wie folgt:</p>
+<ul>
+<li>Rechtsklick auf die VM im linken Anzeigefeld.  </li>
+<li>Tab Optionen -&gt; VMware Tools</li>
+<li>Haken bei <em>synchronize guest time with host</em> setzen  </li>
+</ul>
+<p><img src="../img/systemclock.png" alt="">  </p>
+<h2 id="herunterladen-des-chef-dk"><a name="herunterladen-des-chef-dk" class="plugin-anchor" href="#herunterladen-des-chef-dk"><i class="fa fa-link" aria-hidden="true"></i></a>Herunterladen des Chef DK</h2>
+<p>Geben Sie folgende Befehle in ein Terminal ein</p>
 <blockquote>
-<p>wget <a href="https://packages.chef.io/files/stable/chefdk/2.4.17/ubuntu/16.04/chefdk_2.4.17-1_amd64.deb" target="_blank">https://packages.chef.io/files/stable/chefdk/2.4.17/ubuntu/16.04/chefdk_2.4.17-1_amd64.deb</a></p>
+<p>cd ~<br>wget <a href="https://packages.chef.io/files/stable/chefdk/2.4.17/ubuntu/16.04/chefdk_2.4.17-1_amd64.deb" target="_blank">https://packages.chef.io/files/stable/chefdk/2.4.17/ubuntu/16.04/chefdk_2.4.17-1_amd64.deb</a></p>
 </blockquote>
 <p>Installieren Sie es anschlie&#xDF;end &#xFC;ber den Befehl:</p>
 <blockquote>
@@ -499,6 +507,7 @@ Geben Sie folgenden Befehl ein:</p>
 <blockquote>
 <p>sudo pgrep -f &apos;dpgk|apt&apos; | xargs kill</p>
 </blockquote>
+<p>Falls dies nicht funktioniert, starten Sie die VM neu.</p>
 <h2 id="git-installieren"><a name="git-installieren" class="plugin-anchor" href="#git-installieren"><i class="fa fa-link" aria-hidden="true"></i></a>Git installieren</h2>
 <p>Die Versionierung der Chef Kochb&#xFC;cher erfolgte in Git. Dazu installieren sie sich bitte folgendes Program bei ge&#xF6;fnetem Terminal:</p>
 <blockquote>
@@ -555,7 +564,7 @@ Geben Sie folgenden Befehl ein:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vorbereitung des Servers","level":"2.2","depth":1,"next":{"title":"Ausrollen des Kochbuchs","level":"2.3","depth":1,"path":"QuickProject/Deployment.md","ref":"./QuickProject/Deployment.md","articles":[]},"previous":{"title":"Vorbereitung des Clients","level":"2.1","depth":1,"path":"QuickProject/ClientVorbereitung.md","ref":"./QuickProject/ClientVorbereitung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"QuickProject/ServerVorbereitung.md","mtime":"2018-02-23T07:55:56.349Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T08:57:50.378Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vorbereitung des Servers","level":"2.2","depth":1,"next":{"title":"Ausrollen des Kochbuchs","level":"2.3","depth":1,"path":"QuickProject/Deployment.md","ref":"./QuickProject/Deployment.md","articles":[]},"previous":{"title":"Vorbereitung des Clients","level":"2.1","depth":1,"path":"QuickProject/ClientVorbereitung.md","ref":"./QuickProject/ClientVorbereitung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"QuickProject/ServerVorbereitung.md","mtime":"2018-02-23T09:10:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T09:10:57.627Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

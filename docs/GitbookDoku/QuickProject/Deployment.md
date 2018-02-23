@@ -1,5 +1,5 @@
 # Deployment des Kochbuchs 
-Das Ausrollen des Kochbuchs erfolgt über die ServerVM, welche sie unter [Vorbereitung des Clients](./ServerVorbereitung.md) eingerichtet haben.
+Das Ausrollen des Kochbuchs erfolgt über die ServerVM, welche sie unter [Vorbereitung des Servers](./ServerVorbereitung.md) eingerichtet haben.
 
 ## Klonen des Chef Kochbuchs
 

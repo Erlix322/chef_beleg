@@ -8,10 +8,21 @@ und eine Umgebung zum Einrichten/Starten der virtuellen Maschine vorausgesetzt.
 
 Für das Beispiel in VM Workstation 12 Pro öffen sie die VM und vergeben sie einen Namen (z.B.: ServerVM) und wählen Sie einen Pfad als Ablageort aus.
 
-## Chef DK installieren
+## Systemuhr synchronisieren
+Um spätere Fehler zu vermeiden, müssen Sie die Systemuhr der VM auf die des Hostsystems snchronisieren. In VM Workstation 12 Pro geht dies wie folgt:
 
-Laden Sie sich das Chef Development Kit herunter! Öffnen Sie dazu ein Terminal und geben folgenden Befehl ein:
+* Rechtsklick auf die VM im linken Anzeigefeld.  
+* Tab Optionen -> VMware Tools
+* Haken bei *synchronize guest time with host* setzen  
 
+![](../img/systemclock.png)  
+
+
+## Herunterladen des Chef DK
+
+Geben Sie folgende Befehle in ein Terminal ein
+
+> cd ~  
 > wget https://packages.chef.io/files/stable/chefdk/2.4.17/ubuntu/16.04/chefdk_2.4.17-1_amd64.deb
 
 Installieren Sie es anschließend über den Befehl:
@@ -25,6 +36,7 @@ Falls sie folgende Fehlermeldung erhalten:
 Geben Sie folgenden Befehl ein:
 > sudo pgrep -f 'dpgk|apt' | xargs kill
 
+Falls dies nicht funktioniert, starten Sie die VM neu.
 
 ## Git installieren
 
@@ -41,6 +53,8 @@ Geben Sie folgenden Befehl ein:
 > sudo pgrep -f 'dpgk|apt' | xargs kill
 
 Anschließend sollte die Installation reibungslos verlaufen.
+
+
 
 
 
