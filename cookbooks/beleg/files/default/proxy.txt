@@ -4,3 +4,10 @@ export HTTP_PROXY='http://www-cache.htw-dresden.de:3128'
 export HTTPS_PROXY='http://www-cache.htw-dresden.de:3128'
 export no_proxy=localhost,127.0.0.0,127.0.1.1,127.0.1.1,local.home
 
+gsettings set org.gnome.system.proxy mode 'manual'
+gsettings set org.gnome.system.proxy.http host 'http://www-cache.htw-dresden.de'
+gsettings set org.gnome.system.proxy.http port '3128'
+gsettings set org.gnome.system.proxy.https host 'http://www-cache.htw-dresden.de'
+gsettings set org.gnome.system.proxy.https port '3128'
+
+
