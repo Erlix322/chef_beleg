@@ -16,7 +16,7 @@ Laden Sie sich das Chef Development Kit herunter! Öffnen Sie dazu ein Terminal 
 
 Installieren Sie es anschließend über den Befehl:
 
-> sudo pgrep -f 'dpgk|apt' | xargs kill
+> sudo dpkg -i chefdk_2.4.17-1_amd64.deb
 
 **Mögliche Fehler:**
 
