@@ -22,6 +22,10 @@ Falls sie folgende Fehlermeldung erhalten:
 Geben Sie folgenden Befehl ein:
 > sudo pgrep -f 'dpgk|apt' | xargs kill
 
+Besteht das Problem weiterhin, starten sie die VM neu.
+
 Anschließend sollte die Installation reibungslos verlaufen.
+
+
 
 

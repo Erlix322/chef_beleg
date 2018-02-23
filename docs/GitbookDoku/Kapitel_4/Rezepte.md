@@ -134,6 +134,8 @@ Die Aktuelle Version dieses Cookbooks
         action [:create, :start]
     end
 ```
+Test:
+mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo
 
 # Proxy Rezept {#proxy}
 Die Aktuelle Version dieses Cookbooks  
