@@ -48,9 +48,10 @@ Die Versionierung der Chef Kochbücher erfolgte in Git. Dazu installieren sie si
 
 Falls sie folgende Fehlermeldung erhalten: 
 ![DPKG Lock](../img/dpkg_lock.png)
-Geben Sie folgenden Befehl ein:
+Geben Sie folgende Befehle ein:
 
-> sudo pgrep -f 'dpgk|apt' | xargs kill
+> sudo rm /var/lib/dpkg/lock  
+> sudo dpkg --configure -a
 
 Anschließend sollte die Installation reibungslos verlaufen.
 

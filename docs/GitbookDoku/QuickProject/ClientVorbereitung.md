@@ -19,8 +19,9 @@ Loggen Sie sich dazu in die VM ein (user: student, passwort: itsm) und geben Sie
 
 Falls sie folgende Fehlermeldung erhalten: 
 ![DPKG Lock](../img/dpkg_lock.png)
-Geben Sie folgenden Befehl ein:
-> sudo pgrep -f 'dpgk|apt' | xargs kill
+Geben Sie folgende Befehle ein:
+> sudo rm /var/lib/dpkg/lock  
+> sudo dpkg --configure -a
 
 Besteht das Problem weiterhin, starten sie die VM neu.
 
