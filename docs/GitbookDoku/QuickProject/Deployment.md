@@ -56,9 +56,9 @@ Geben Sie die folgenden Befehle in das Teminal ein:
 
 > cd ~/chef_beleg/cookbooks/beleg/  
 
-> knife bootstrap <your_ip> --ssh-user student --ssh-password 'itsm' --sudo --use-sudo-password 'itsm' --node-name server_gruppe_n --run-list 'recipe[beleg]' --yes
+> knife bootstrap *your_node_ip* --ssh-user student --ssh-password 'itsm' --sudo --use-sudo-password 'itsm' --node-name server_gruppe_n --run-list 'recipe[beleg]' --yes
 
-**ACHTUNG:**Ersetzen Sie dabei <your_ip> durch die IP der ClientVM!
+**ACHTUNG:**Ersetzen Sie dabei *your_node_ip* durch die IP der ClientVM!
 
 **Mögliche Fehlerquellen**
 Falls Sie folgenden Fehler erhalten: 

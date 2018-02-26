@@ -27,6 +27,17 @@ Besteht das Problem weiterhin, starten sie die VM neu.
 
 Anschließend sollte die Installation reibungslos verlaufen.
 
+## Systemuhr synchronisieren
+
+Um spätere Fehler zu vermeiden, müssen Sie die Systemuhr der VM auf die des Hostsystems snchronisieren. In VM Workstation 12 Pro geht dies wie folgt:
+
+* Rechtsklick auf die VM im linken Anzeigefeld.  
+* Tab Optionen -> VMware Tools
+* Haken bei *synchronize guest time with host* setzen  
+
+![](../img/systemclock.png)  
+
+
 
 
 
