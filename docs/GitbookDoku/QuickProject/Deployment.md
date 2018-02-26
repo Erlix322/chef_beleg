@@ -7,9 +7,6 @@ Das Ausrollen des Kochbuchs erfolgt über die ServerVM, welche sie unter [Vorber
 
 > git clone https://github.com/Erlix322/chef_beleg
 
-Wechseln Sie in das Verzeichnis: 
-
-> cd chef_beleg/cookbooks/beleg
 
 ## Registrierung
 Sie benötigen ein Account auf https://manage.chef.io um ihre Organisationen und aktiven Clients zu verwalten. Registrieren Sie sich bitte mit einem Klick auf "Click here to get started!"
@@ -33,17 +30,16 @@ Klicken Sie anschließend auf **Reset Key** in den User Details und laden Sie si
 **Anmerkung** In einem Produktivsystem, würden Sie die Keys zentral verwalten und nicht einfach resetten und einen neuen Erstellen. 
 
 Kopieren Sie die heruntergeladene Datei mit folgenden Befehlen: 
-
-> cd ~  
-> cp Downloads/<your_file>.pem ./chef_beleg/.chef/
+ 
+> cp Downloads/ihre_datei.pem ./chef_beleg/.chef/
 
 ## Knife Konfiguration erstellen
 Klicken Sie auf den Tab *Administration*, klicken Sie links auf *Organization* und auf "Knife Konfiguration erstellen". Speichern sie die Datei in Downloads.
 
 ![](../img/genknife.png)
 
-> cd ~
-> cp Downloads/<your_knife_file>.pem ./chef_beleg/.chef/
+> cd ~  
+> cp Downloads/ihre_knife_datei.rb ./chef_beleg/.chef/  
 
 ## Upload der Rezepte
 Geben Sie folgende Befehle ein
@@ -60,9 +56,9 @@ Geben Sie die folgenden Befehle in das Teminal ein:
 
 > cd ~/chef_beleg/cookbooks/beleg/  
 
-> knife bootstrap 192.168.144.135 --ssh-user student --ssh-password 'itsm' --sudo --use-sudo-password 'itsm' --node-name server_gruppe_n --run-list 'recipe[beleg]' --yes
+> knife bootstrap <your_ip> --ssh-user student --ssh-password 'itsm' --sudo --use-sudo-password 'itsm' --node-name server_gruppe_n --run-list 'recipe[beleg]' --yes
 
-**ACHTUNG:**Ersetzen Sie dabei die IP durch die IP der ClientVM!
+**ACHTUNG:**Ersetzen Sie dabei <your_ip> durch die IP der ClientVM!
 
 **Mögliche Fehlerquellen**
 Falls Sie folgenden Fehler erhalten: 

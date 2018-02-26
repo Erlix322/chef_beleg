@@ -33,8 +33,10 @@ Installieren Sie es anschließend über den Befehl:
 
 Falls sie folgende Fehlermeldung erhalten: 
 ![DPKG Lock](../img/dpkg_lock.png)
-Geben Sie folgenden Befehl ein:
-> sudo pgrep -f 'dpgk|apt' | xargs kill
+Geben Sie folgende Befehle ein:
+
+> sudo rm /var/lib/dpkg/lock  
+> sudo dpkg --configure -a
 
 Falls dies nicht funktioniert, starten Sie die VM neu.
 
