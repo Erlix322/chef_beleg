@@ -482,10 +482,6 @@
 <blockquote>
 <p>git clone <a href="https://github.com/Erlix322/chef_beleg" target="_blank">https://github.com/Erlix322/chef_beleg</a></p>
 </blockquote>
-<p>Wechseln Sie in das Verzeichnis: </p>
-<blockquote>
-<p>cd chef_beleg/cookbooks/beleg</p>
-</blockquote>
 <h2 id="registrierung"><a name="registrierung" class="plugin-anchor" href="#registrierung"><i class="fa fa-link" aria-hidden="true"></i></a>Registrierung</h2>
 <p>Sie ben&#xF6;tigen ein Account auf <a href="https://manage.chef.io" target="_blank">https://manage.chef.io</a> um ihre Organisationen und aktiven Clients zu verwalten. Registrieren Sie sich bitte mit einem Klick auf &quot;Click here to get started!&quot;</p>
 <p><img src="../img/ChefRegister.png" alt=""></p>
@@ -500,14 +496,13 @@ Im Tab <strong>Administration</strong> klicken sie auf <strong>Users</strong> un
 <p><strong>Anmerkung</strong> In einem Produktivsystem, w&#xFC;rden Sie die Keys zentral verwalten und nicht einfach resetten und einen neuen Erstellen. </p>
 <p>Kopieren Sie die heruntergeladene Datei mit folgenden Befehlen: </p>
 <blockquote>
-<p>cd ~<br>cp Downloads/<your_file>.pem ./chef_beleg/.chef/</your_file></p>
+<p>cp Downloads/ihre_datei.pem ./chef_beleg/.chef/</p>
 </blockquote>
 <h2 id="knife-konfiguration-erstellen"><a name="knife-konfiguration-erstellen" class="plugin-anchor" href="#knife-konfiguration-erstellen"><i class="fa fa-link" aria-hidden="true"></i></a>Knife Konfiguration erstellen</h2>
 <p>Klicken Sie auf den Tab <em>Administration</em>, klicken Sie links auf <em>Organization</em> und auf &quot;Knife Konfiguration erstellen&quot;. Speichern sie die Datei in Downloads.</p>
 <p><img src="../img/genknife.png" alt=""></p>
 <blockquote>
-<p>cd ~
-cp Downloads/<your_knife_file>.pem ./chef_beleg/.chef/</your_knife_file></p>
+<p>cd ~<br>cp Downloads/ihre_knife_datei.rb ./chef_beleg/.chef/  </p>
 </blockquote>
 <h2 id="upload-der-rezepte"><a name="upload-der-rezepte" class="plugin-anchor" href="#upload-der-rezepte"><i class="fa fa-link" aria-hidden="true"></i></a>Upload der Rezepte</h2>
 <p>Geben Sie folgende Befehle ein</p>
@@ -518,9 +513,9 @@ cp Downloads/<your_knife_file>.pem ./chef_beleg/.chef/</your_knife_file></p>
 <p>Geben Sie die folgenden Befehle in das Teminal ein:</p>
 <blockquote>
 <p>cd ~/chef_beleg/cookbooks/beleg/  </p>
-<p>knife bootstrap 192.168.144.135 --ssh-user student --ssh-password &apos;itsm&apos; --sudo --use-sudo-password &apos;itsm&apos; --node-name server_gruppe_n --run-list &apos;recipe[beleg]&apos; --yes</p>
+<p>knife bootstrap <your_ip> --ssh-user student --ssh-password &apos;itsm&apos; --sudo --use-sudo-password &apos;itsm&apos; --node-name server_gruppe_n --run-list &apos;recipe[beleg]&apos; --yes</your_ip></p>
 </blockquote>
-<p><strong>ACHTUNG:</strong>Ersetzen Sie dabei die IP durch die IP der ClientVM!</p>
+<p><strong>ACHTUNG:</strong>Ersetzen Sie dabei <your_ip> durch die IP der ClientVM!</your_ip></p>
 <p><strong>M&#xF6;gliche Fehlerquellen</strong>
 Falls Sie folgenden Fehler erhalten: 
 <img src="../img/failedAUth.png" alt="Fehler"></p>
@@ -568,7 +563,7 @@ Falls Sie folgenden Fehler erhalten:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ausrollen des Kochbuchs","level":"2.3","depth":1,"next":{"title":"Kochbücher","level":"3.1","depth":1,"path":"Kapitel_4/cookbook.md","ref":"./Kapitel_4/cookbook.md","articles":[]},"previous":{"title":"Vorbereitung des Servers","level":"2.2","depth":1,"path":"QuickProject/ServerVorbereitung.md","ref":"./QuickProject/ServerVorbereitung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"QuickProject/Deployment.md","mtime":"2018-02-23T09:02:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-26T08:20:06.762Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ausrollen des Kochbuchs","level":"2.3","depth":1,"next":{"title":"Kochbücher","level":"3.1","depth":1,"path":"Kapitel_4/cookbook.md","ref":"./Kapitel_4/cookbook.md","articles":[]},"previous":{"title":"Vorbereitung des Servers","level":"2.2","depth":1,"path":"QuickProject/ServerVorbereitung.md","ref":"./QuickProject/ServerVorbereitung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"QuickProject/Deployment.md","mtime":"2018-02-26T08:26:45.321Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-26T08:27:52.743Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
