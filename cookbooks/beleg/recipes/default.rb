@@ -15,5 +15,5 @@ include_recipe 'beleg::eclipse'
 include_recipe 'beleg::firewall'
 include_recipe 'beleg::libre'
 include_recipe 'beleg::vim'
-include_recipe 'beleg::reboot'
+#include_recipe 'beleg::reboot'
 
