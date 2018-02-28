@@ -499,7 +499,9 @@
 <li>chef generate recipe vim</li>
 </ul>
 <h2 id="apache"><a name="apache" class="plugin-anchor" href="#apache"><i class="fa fa-link" aria-hidden="true"></i></a>Apache Rezept </h2>
-<p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/apache2" target="_blank"><img src="https://img.shields.io/cookbook/v/apache2.svg?style=flat" alt="Cookbook Version"></a></p>
+<p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/apache2" target="_blank"><img src="https://img.shields.io/cookbook/v/apache2.svg?style=flat" alt="Cookbook Version"></a>  </p>
+<p>Beschreibung:
+Erstellt auf dem Node-System einen Apache2 Server und richtet diesen ein. Als Standardseite wird ein HTML Dokument mit dem Text &quot;Hello Beleg&quot; angelegt.</p>
 <pre><code class="lang-ruby">    include_recipe <span class="hljs-string">&apos;apache2::default&apos;</span>
 
     web_app node[<span class="hljs-string">&apos;itsm&apos;</span>][<span class="hljs-string">&apos;name&apos;</span>] <span class="hljs-keyword">do</span>
@@ -515,22 +517,30 @@
         mode <span class="hljs-number">0755</span>
     <span class="hljs-keyword">end</span>
 </code></pre>
+<p><strong>TEST:</strong> &#xD6;ffnen Sie auf der Node einen Browser und geben Sie <em>localhost</em> in die Adresszeile ein.</p>
 <h1 id="chrome"><a name="chrome" class="plugin-anchor" href="#chrome"><i class="fa fa-link" aria-hidden="true"></i></a>Chrome Rezept </h1>
-<p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/chrome" target="_blank"><img src="https://img.shields.io/cookbook/v/chrome.svg?style=flat" alt="Cookbook Version"></a></p>
+<p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/chrome" target="_blank"><img src="https://img.shields.io/cookbook/v/chrome.svg?style=flat" alt="Cookbook Version"></a>  </p>
+<p><strong>Beschreibung</strong>:Installiert einen Chrome Browser in der aktuellen Version auf der Node.</p>
 <pre><code class="lang-ruby">    include_recipe <span class="hljs-string">&apos;chrome&apos;</span>
 </code></pre>
+<p><strong>TEST:</strong> &#xD6;ffnen Sie auf der Node den Chrome Browser</p>
 <h1 id="eclipse"><a name="eclipse" class="plugin-anchor" href="#eclipse"><i class="fa fa-link" aria-hidden="true"></i></a>Eclipse Rezept </h1>
 <p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/eclipse" target="_blank"><img src="https://img.shields.io/cookbook/v/eclipse.svg?style=flat" alt="Cookbook Version"></a></p>
+<p><strong>Beschreibung:</strong> Installiert eine Eclipse Standardversion auf der Node.</p>
 <pre><code class="lang-ruby">    apt_package <span class="hljs-string">&apos;eclipse&apos;</span> <span class="hljs-keyword">do</span>
     action <span class="hljs-symbol">:upgrade</span>
     <span class="hljs-keyword">end</span>
 </code></pre>
+<p><strong>TEST:</strong> &#xD6;ffnen Sie auf der Node Eclipse</p>
 <h1 id="firefox"><a name="firefox" class="plugin-anchor" href="#firefox"><i class="fa fa-link" aria-hidden="true"></i></a>Firefox Rezept </h1>
 <p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/firefox" target="_blank"><img src="https://img.shields.io/cookbook/v/firefox.svg?style=flat" alt="Cookbook Version"></a></p>
+<p><strong>Beschreibung:</strong> installiert einen Firefox Browser in der aktuellen Version auf der Node.</p>
 <pre><code class="lang-ruby">    include_recipe <span class="hljs-string">&apos;firefox&apos;</span>
 </code></pre>
+<p><strong>TEST:</strong> &#xD6;ffnen sie den Browser in der Node</p>
 <h1 id="firewall"><a name="firewall" class="plugin-anchor" href="#firewall"><i class="fa fa-link" aria-hidden="true"></i></a>Firewall Rezept </h1>
 <p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/firewall" target="_blank"><img src="https://img.shields.io/cookbook/v/firewall.svg?style=flat" alt="Cookbook Version"></a></p>
+<p><strong>Beschreibung:</strong> Installiert eine Firewall auf der Node mit den ge&#xF6;ffneten Ports: 22, 80, 443</p>
 <pre><code class="lang-ruby">    firewall <span class="hljs-string">&apos;default&apos;</span>
 
     firewall_rule <span class="hljs-string">&apos;ssh&apos;</span> <span class="hljs-keyword">do</span>
@@ -559,16 +569,20 @@
     <span class="hljs-keyword">end</span>
 </code></pre>
 <h1 id="htop"><a name="htop" class="plugin-anchor" href="#htop"><i class="fa fa-link" aria-hidden="true"></i></a>Htop Rezept </h1>
-<p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/htop" target="_blank"><img src="https://img.shields.io/cookbook/v/htop.svg?style=flat" alt="Cookbook Version"></a></p>
+<p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/htop" target="_blank"><img src="https://img.shields.io/cookbook/v/htop.svg?style=flat" alt="Cookbook Version"></a> </p>
+<p><strong>Beschreibung:</strong> Installation des Programms htop</p>
 <pre><code class="lang-ruby">    include_recipe <span class="hljs-string">&apos;htop&apos;</span>
 </code></pre>
+<p><strong>TEST:</strong> Geben Sie den Befehl htop in ein Ge&#xF6;ffnetes Terminal ein.</p>
 <h1 id="libre"><a name="libre" class="plugin-anchor" href="#libre"><i class="fa fa-link" aria-hidden="true"></i></a>Libre Rezept </h1>
+<p><strong>Beschreibung:</strong> L&#xF6;scht Libre Office und alle zugeh&#xF6;rigen Komponenten vom Node System.  </p>
 <pre><code class="lang-ruby">    execute <span class="hljs-string">&quot;Remove libre&quot;</span> <span class="hljs-keyword">do</span>
       command <span class="hljs-string">&quot;sudo apt-get -y remove libreoffice* --purge&quot;</span>
     <span class="hljs-keyword">end</span>
 </code></pre>
 <h1 id="mysql"><a name="mysql" class="plugin-anchor" href="#mysql"><i class="fa fa-link" aria-hidden="true"></i></a>MySql Rezept </h1>
 <p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/mysql" target="_blank"><img src="https://img.shields.io/cookbook/v/mysql.svg?style=flat" alt="Cookbook Version"></a></p>
+<p><strong>Beschreibung:</strong> Installiert einen mysql Server auf der Node.</p>
 <pre><code class="lang-ruby">    mysql_service <span class="hljs-string">&apos;foo&apos;</span> <span class="hljs-keyword">do</span>
         port <span class="hljs-string">&apos;3306&apos;</span>
         version <span class="hljs-string">&apos;5.7&apos;</span>
@@ -576,10 +590,12 @@
         action [<span class="hljs-symbol">:create</span>, <span class="hljs-symbol">:start</span>]
     <span class="hljs-keyword">end</span>
 </code></pre>
-<p>Test:
-mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo</p>
+<p><strong>TEST:</strong> Geben Sie in einem Terminal folgenden Befehl ein:  </p>
+<blockquote>
+<p>mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo</p>
+</blockquote>
 <h1 id="proxy"><a name="proxy" class="plugin-anchor" href="#proxy"><i class="fa fa-link" aria-hidden="true"></i></a>Proxy Rezept </h1>
-<p>Die Aktuelle Version dieses Cookbooks  </p>
+<p><strong>Beschreibung:</strong> Richtet den Proxy auf dem Node System ein.</p>
 <pre><code class="lang-ruby">cookbook_file <span class="hljs-string">&quot;/tmp/proxy.txt&quot;</span>
 
     bash <span class="hljs-string">&quot;config proxy&quot;</span> <span class="hljs-keyword">do</span>
@@ -587,6 +603,7 @@ mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo</p>
     <span class="hljs-keyword">end</span>
 </code></pre>
 <h1 id="user"><a name="user" class="plugin-anchor" href="#user"><i class="fa fa-link" aria-hidden="true"></i></a>User Rezept </h1>
+<p><strong>Beschreibung:</strong> Richtet einen Labornutzer mit den Nuterdaten labornutzer und Passwort nutzer@labor123 an.</p>
 <pre><code class="lang-ruby">    group <span class="hljs-string">&apos;users&apos;</span>
 
 
@@ -611,8 +628,10 @@ mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo</p>
 </code></pre>
 <h1 id="vim"><a name="vim" class="plugin-anchor" href="#vim"><i class="fa fa-link" aria-hidden="true"></i></a>Vim Rezept </h1>
 <p>Die Aktuelle Version dieses Cookbooks<br><a href="https://supermarket.chef.io/cookbooks/vim" target="_blank"><img src="https://img.shields.io/cookbook/v/vim.svg?style=flat" alt="Cookbook Version"></a></p>
+<p><strong>Beschreibung:</strong> installiert vim auf dem Node System.</p>
 <pre><code class="lang-ruby">    include_recipe <span class="hljs-string">&apos;vim&apos;</span>
 </code></pre>
+<p><strong>TEST:</strong> Geben sie den Befehl vim in ein ge&#xF6;ffnetes Terminal ein.</p>
 
                                 
                                 </section>
@@ -656,7 +675,7 @@ mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Rezepte Konfigurieren","level":"3.2","depth":1,"next":{"title":"Apache","level":"3.2.1","depth":2,"anchor":"#apache","path":"Kapitel_4/Rezepte.md","ref":"./Kapitel_4/Rezepte.md#apache","articles":[]},"previous":{"title":"Kochbücher","level":"3.1","depth":1,"path":"Kapitel_4/cookbook.md","ref":"./Kapitel_4/cookbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"Kapitel_4/Rezepte.md","mtime":"2018-02-23T08:49:30.201Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-28T07:46:24.290Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Rezepte Konfigurieren","level":"3.2","depth":1,"next":{"title":"Apache","level":"3.2.1","depth":2,"anchor":"#apache","path":"Kapitel_4/Rezepte.md","ref":"./Kapitel_4/Rezepte.md#apache","articles":[]},"previous":{"title":"Kochbücher","level":"3.1","depth":1,"path":"Kapitel_4/cookbook.md","ref":"./Kapitel_4/cookbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"Kapitel_4/Rezepte.md","mtime":"2018-02-28T08:08:24.707Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-28T08:08:40.496Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

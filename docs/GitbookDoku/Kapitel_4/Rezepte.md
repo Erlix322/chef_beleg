@@ -23,7 +23,10 @@ In Anlehnung an die Aufgabenstellung erfolgt die Erstellung von allen Rezepten m
 
 ## Apache Rezept {#apache}
 Die Aktuelle Version dieses Cookbooks  
-[![Cookbook Version](https://img.shields.io/cookbook/v/apache2.svg?style=flat)](https://supermarket.chef.io/cookbooks/apache2)
+[![Cookbook Version](https://img.shields.io/cookbook/v/apache2.svg?style=flat)](https://supermarket.chef.io/cookbooks/apache2)  
+
+Beschreibung:
+Erstellt auf dem Node-System einen Apache2 Server und richtet diesen ein. Als Standardseite wird ein HTML Dokument mit dem Text "Hello Beleg" angelegt.
 
 ```ruby
     include_recipe 'apache2::default'
@@ -42,17 +45,25 @@ Die Aktuelle Version dieses Cookbooks
     end 
 ```
 
+**TEST:** Öffnen Sie auf der Node einen Browser und geben Sie *localhost* in die Adresszeile ein.
+
 # Chrome Rezept {#chrome}
 Die Aktuelle Version dieses Cookbooks  
-[![Cookbook Version](https://img.shields.io/cookbook/v/chrome.svg?style=flat)](https://supermarket.chef.io/cookbooks/chrome)
+[![Cookbook Version](https://img.shields.io/cookbook/v/chrome.svg?style=flat)](https://supermarket.chef.io/cookbooks/chrome)  
 
+**Beschreibung**:Installiert einen Chrome Browser in der aktuellen Version auf der Node.
 
 ```ruby
     include_recipe 'chrome'
 ```
+
+**TEST:** Öffnen Sie auf der Node den Chrome Browser
+
 # Eclipse Rezept {#eclipse}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/eclipse.svg?style=flat)](https://supermarket.chef.io/cookbooks/eclipse)
+
+**Beschreibung:** Installiert eine Eclipse Standardversion auf der Node.
 
 
 ```ruby
@@ -60,20 +71,23 @@ Die Aktuelle Version dieses Cookbooks
 	action :upgrade
     end
 ```
-
+**TEST:** Öffnen Sie auf der Node Eclipse
 # Firefox Rezept {#firefox}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/firefox.svg?style=flat)](https://supermarket.chef.io/cookbooks/firefox)
 
+**Beschreibung:** installiert einen Firefox Browser in der aktuellen Version auf der Node.
 
 ```ruby
     include_recipe 'firefox'
-```
- 
+```  
+**TEST:** Öffnen sie den Browser in der Node
+
 # Firewall Rezept {#firewall}
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/firewall.svg?style=flat)](https://supermarket.chef.io/cookbooks/firewall)
 
+**Beschreibung:** Installiert eine Firewall auf der Node mit den geöffneten Ports: 22, 80, 443
 
 ```ruby
     firewall 'default'
@@ -106,14 +120,20 @@ Die Aktuelle Version dieses Cookbooks
 
 # Htop Rezept {#htop}
 Die Aktuelle Version dieses Cookbooks  
-[![Cookbook Version](https://img.shields.io/cookbook/v/htop.svg?style=flat)](https://supermarket.chef.io/cookbooks/htop)
+[![Cookbook Version](https://img.shields.io/cookbook/v/htop.svg?style=flat)](https://supermarket.chef.io/cookbooks/htop) 
+  
+**Beschreibung:** Installation des Programms htop
 
 
 ```ruby
     include_recipe 'htop'
 ```
 
+**TEST:** Geben Sie den Befehl htop in ein Geöffnetes Terminal ein.
+
 # Libre Rezept {#libre}
+
+**Beschreibung:** Löscht Libre Office und alle zugehörigen Komponenten vom Node System.  
 
 ```ruby
     execute "Remove libre" do
@@ -125,6 +145,7 @@ Die Aktuelle Version dieses Cookbooks
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/mysql.svg?style=flat)](https://supermarket.chef.io/cookbooks/mysql)
 
+**Beschreibung:** Installiert einen mysql Server auf der Node.
 
 ```ruby
     mysql_service 'foo' do
@@ -134,11 +155,12 @@ Die Aktuelle Version dieses Cookbooks
         action [:create, :start]
     end
 ```
-Test:
-mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo
+**TEST:** Geben Sie in einem Terminal folgenden Befehl ein:  
+> mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo
 
 # Proxy Rezept {#proxy}
-Die Aktuelle Version dieses Cookbooks  
+ 
+**Beschreibung:** Richtet den Proxy auf dem Node System ein.
 
 ```ruby
 cookbook_file "/tmp/proxy.txt"
@@ -149,6 +171,8 @@ cookbook_file "/tmp/proxy.txt"
 ```
 
 # User Rezept {#user}
+
+**Beschreibung:** Richtet einen Labornutzer mit den Nuterdaten labornutzer und Passwort nutzer@labor123 an.
 
 ```ruby
     group 'users'
@@ -178,7 +202,10 @@ cookbook_file "/tmp/proxy.txt"
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/vim.svg?style=flat)](https://supermarket.chef.io/cookbooks/vim)
 
+**Beschreibung:** installiert vim auf dem Node System.
 
 ```ruby
     include_recipe 'vim'
 ```
+
+**TEST:** Geben sie den Befehl vim in ein geöffnetes Terminal ein.
