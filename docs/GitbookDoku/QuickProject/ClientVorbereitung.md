@@ -1,4 +1,5 @@
 # Client Vorbereitung
+[Video Tutorial](https://www.youtube.com/watch?v=e5ms8EQ89VU)  
 Als gegeben wird eine Ubuntu VM 16.04, befindlich in: 
 
 > E:\VM\LV-Reichelt\IMAGES\Ubuntu16.04

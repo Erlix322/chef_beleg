@@ -1,4 +1,5 @@
 # Server Vorbereitung
+[Video Tutorial](https://www.youtube.com/watch?v=xwA-UoSuBFk)  
 Als gegeben wird eine Ubuntu VM 16.04, befindlich in: 
 
 > E:\VM\LV-Reichelt\IMAGES\Ubuntu16.04

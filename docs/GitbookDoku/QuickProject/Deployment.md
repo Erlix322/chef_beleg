@@ -1,4 +1,5 @@
 # Deployment des Kochbuchs 
+[Video Tutorial](https://www.youtube.com/watch?v=wskAlyYeovc) 
 Das Ausrollen des Kochbuchs erfolgt über die ServerVM, welche sie unter [Vorbereitung des Servers](./ServerVorbereitung.md) eingerichtet haben.
 
 ## Klonen des Chef Kochbuchs

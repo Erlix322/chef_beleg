@@ -90,7 +90,7 @@ Die Aktuelle Version dieses Cookbooks
 Die Aktuelle Version dieses Cookbooks  
 [![Cookbook Version](https://img.shields.io/cookbook/v/firewall.svg?style=flat)](https://supermarket.chef.io/cookbooks/firewall)
 
-**Beschreibung:** Installiert eine Firewall auf der Node mit den geöffneten Ports: 22, 80, 443
+**Beschreibung:** Installiert eine Firewall auf der Node mit den geöffneten Ports: 22, 80, 443 und geschlossenem Port: 3389
 
 ```ruby
     firewall 'default'
