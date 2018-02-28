@@ -28,6 +28,9 @@ Die Aktuelle Version dieses Cookbooks
 Beschreibung:
 Erstellt auf dem Node-System einen Apache2 Server und richtet diesen ein. Als Standardseite wird ein HTML Dokument mit dem Text "Hello Beleg" angelegt.
 
+Das verwendete Template ist hier zu finden:
+[Template](https://github.com/Erlix322/chef_beleg/blob/master/cookbooks/beleg/templates/itsm_conf.erb)
+
 ```ruby
     include_recipe 'apache2::default'
 
@@ -156,7 +159,7 @@ Die Aktuelle Version dieses Cookbooks
     end
 ```
 **TEST:** Geben Sie in einem Terminal folgenden Befehl ein:  
-> mysql -S /var/run/mysql-foo/mysqld.sock -u root -p foo
+> mysql -S /var/run/mysql-foo/mysqld.sock -u root -p
 
 # Proxy Rezept {#proxy}
  
@@ -165,9 +168,21 @@ Die Aktuelle Version dieses Cookbooks
 ```ruby
 cookbook_file "/tmp/proxy.txt"
 
-    bash "config proxy" do
-	    code "sudo cat /tmp/proxy.txt >> /etc/environment"
-    end
+bash "config proxy" do
+	code "sudo cat /tmp/proxy.txt >> /etc/environment"
+end
+
+bash "config proxy bash" do
+	code "sudo cat /tmp/proxy.txt >> /home/labornutzer/.bashrc" 
+end
+
+bash "config proxy profile" do
+	code "sudo cat /tmp/proxy.txt >> /home/labornutzer/.profile"
+end
+
+bash "source files" do
+	code "source /etc/environment && source /home/labornutzer/.profile"
+end    
 ```
 
 # User Rezept {#user}
