@@ -6,14 +6,17 @@ Als gegeben wird eine Ubuntu VM 16.04, befindlich in:
 und eine Umgebung zum Einrichten/Starten der virtuellen Maschine vorausgesetzt.
 (z.B.: VM Workstation 12 Pro)
 
-Für das Beispiel in VM Workstation 12 Pro öffen sie die VM und vergeben sie einen Namen (z.B.: ClientVM) und wählen Sie einen Pfad als Ablageort aus.
+Für das Beispiel in VM Workstation 12 Pro öffnen sie die VM und vergeben sie einen Namen (z.B.: ClientVM) und wählen Sie einen Pfad als Ablageort aus.
 
+## VM starten
+Starten sie die VM und loggen Sie sich in den Studentenaccount ein.
+  
 ## OpenSSH - Server installieren
 
 Zur Konfiguration der Clients wird eine SSH - Verbindung benötigt. Laden Sie sich dazu das Programm **openssh-server** herunter.
 Loggen Sie sich dazu in die VM ein (user: student, passwort: itsm) und geben Sie folgenden Befehl in ein geöffnetes Terminal ein: 
 
-> sudo apt-get install openssh-server
+> sudo apt-get install openssh-server --yes
 
 **Mögliche Fehler:**
 

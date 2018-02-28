@@ -482,7 +482,9 @@
 </blockquote>
 <p>und eine Umgebung zum Einrichten/Starten der virtuellen Maschine vorausgesetzt.
 (z.B.: VM Workstation 12 Pro)</p>
-<p>F&#xFC;r das Beispiel in VM Workstation 12 Pro &#xF6;ffen sie die VM und vergeben sie einen Namen (z.B.: ServerVM) und w&#xE4;hlen Sie einen Pfad als Ablageort aus.</p>
+<p>F&#xFC;r das Beispiel in VM Workstation 12 Pro &#xF6;ffnen sie die VM und vergeben sie einen Namen (z.B.: ServerVM) und w&#xE4;hlen Sie einen Pfad als Ablageort aus.</p>
+<h2 id="vm-starten"><a name="vm-starten" class="plugin-anchor" href="#vm-starten"><i class="fa fa-link" aria-hidden="true"></i></a>VM starten</h2>
+<p>Starten sie die VM und loggen Sie sich in den Studentenaccount ein.  </p>
 <h2 id="systemuhr-synchronisieren"><a name="systemuhr-synchronisieren" class="plugin-anchor" href="#systemuhr-synchronisieren"><i class="fa fa-link" aria-hidden="true"></i></a>Systemuhr synchronisieren</h2>
 <p>Um sp&#xE4;tere Fehler zu vermeiden, m&#xFC;ssen Sie die Systemuhr der VM auf die des Hostsystems snchronisieren. In VM Workstation 12 Pro geht dies wie folgt:</p>
 <ul>
@@ -491,6 +493,20 @@
 <li>Haken bei <em>synchronize guest time with host</em> setzen  </li>
 </ul>
 <p><img src="../img/systemclock.png" alt="">  </p>
+<h2 id="proxy-anpassen"><a name="proxy-anpassen" class="plugin-anchor" href="#proxy-anpassen"><i class="fa fa-link" aria-hidden="true"></i></a>Proxy anpassen</h2>
+<p>Der Host ben&#xF6;tigt eine stabile Internetverbindung. Da sich in der oben genannten VM noch ein Fehler befindet, passen sie bitte die Datei /etc/environment an indem sie folgende Befehle ausf&#xFC;hren:</p>
+<blockquote>
+<p>sudo gedit /etc/environment</p>
+</blockquote>
+<p>Ersetzen Sie folgende Zeile </p>
+<blockquote>
+<p>https_proxy=&quot;<a href="https://www-cache.htw-dresden.de" target="_blank">https://www-cache.htw-dresden.de</a>&quot;<br>durch die folgende:<br>https_proxy=&quot;<a href="http://www-cache.htw-dresden.de" target="_blank">http://www-cache.htw-dresden.de</a>&quot;  </p>
+</blockquote>
+<p>Speichern und schlie&#xDF;en sie das Dokument.
+Geben Sie abschlie&#xDF;end folgenden Befehl ein:  </p>
+<blockquote>
+<p>source /etc/environment  </p>
+</blockquote>
 <h2 id="herunterladen-des-chef-dk"><a name="herunterladen-des-chef-dk" class="plugin-anchor" href="#herunterladen-des-chef-dk"><i class="fa fa-link" aria-hidden="true"></i></a>Herunterladen des Chef DK</h2>
 <p>Geben Sie folgende Befehle in ein Terminal ein</p>
 <blockquote>
@@ -511,7 +527,7 @@ Geben Sie folgende Befehle ein:</p>
 <h2 id="git-installieren"><a name="git-installieren" class="plugin-anchor" href="#git-installieren"><i class="fa fa-link" aria-hidden="true"></i></a>Git installieren</h2>
 <p>Die Versionierung der Chef Kochb&#xFC;cher erfolgte in Git. Dazu installieren sie sich bitte folgendes Program bei ge&#xF6;fnetem Terminal:</p>
 <blockquote>
-<p>sudo apt-get install git</p>
+<p>sudo apt-get install git --yes</p>
 </blockquote>
 <p><strong>M&#xF6;gliche Fehler:</strong></p>
 <p>Falls sie folgende Fehlermeldung erhalten: 
@@ -564,7 +580,7 @@ Geben Sie folgende Befehle ein:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vorbereitung des Servers","level":"2.2","depth":1,"next":{"title":"Ausrollen des Kochbuchs","level":"2.3","depth":1,"path":"QuickProject/Deployment.md","ref":"./QuickProject/Deployment.md","articles":[]},"previous":{"title":"Vorbereitung des Clients","level":"2.1","depth":1,"path":"QuickProject/ClientVorbereitung.md","ref":"./QuickProject/ClientVorbereitung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"QuickProject/ServerVorbereitung.md","mtime":"2018-02-26T08:22:15.875Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-26T08:58:36.796Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vorbereitung des Servers","level":"2.2","depth":1,"next":{"title":"Ausrollen des Kochbuchs","level":"2.3","depth":1,"path":"QuickProject/Deployment.md","ref":"./QuickProject/Deployment.md","articles":[]},"previous":{"title":"Vorbereitung des Clients","level":"2.1","depth":1,"path":"QuickProject/ClientVorbereitung.md","ref":"./QuickProject/ClientVorbereitung.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"de","gitbook":"*"},"file":{"path":"QuickProject/ServerVorbereitung.md","mtime":"2018-02-28T07:45:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-28T07:46:24.290Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
