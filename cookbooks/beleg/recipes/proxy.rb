@@ -14,4 +14,11 @@ bash "config proxy bash" do
 	code "sudo cat /tmp/proxy.txt >> /home/labornutzer/.bashrc" 
 end
 
+bash "config proxy profile" do
+	code "sudo cat /tmp/proxy.txt >> /home/labornutzer/.profile"
+end
+
+bash "source files" do
+	code "source /etc/environment && source /home/labornutzer/.profile"
+end
 
